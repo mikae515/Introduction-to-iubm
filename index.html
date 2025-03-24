@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display:grid;
+        width:100%;
+        grid-template-columns:repeat(3,1fr); 
+        grid-template-rows: 150px 50px 1000px 100px 700px 50px 390px 310px 250px 300px 100px 100px 500px 500px 800px 50px 100px 200px 400px  ;
+        grid-template-areas: 
+        "html html html"
+        "css css css"
+        "js js js"
+        "preview preview preview"
+        "block1 block2 block3"
+        "css2 css2 css2"
+        "paket1 paket1 paket2"
+        "paket3 paket3 paket2"
+        "paket4 paket4 paket6"
+        "paket5 paket5 paket6"
+        "tambah tambah tambah"
+        "Hr   Hr   Hr"
+        "paket8 paket8 paket7"
+        "paket9 paket9 paket7"
+        "paket10 paket10 paket7"
+        "Hr1 Hr1 Hr1"
+        "event1_1 event1_1 event1_1"
+        "event event event"
+        "event2 event2 event2"
+        "event3 event3 event3";
+
+
+
+
+        column-gap: 10px;
+        row-gap:10px;
+        text-align: center;
+        margin: 10px;
+        padding:10px;
+        font-style:normal;
+
+
+          }
+
+          .html{
+            grid-area:html;
+            color:white;
+            font-size: 7em;
+            border-radius: 30px 30px;
+            background-color: blue;
+            font-style:initial;
+            padding-top: 25px;
+            word-spacing: 10px;
+            background-image: url("image\ copy\ 5.png") ;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
+
+           
+
+          }
+        
+
+          .img{
+            width:80px;
+            height:80px;
+            left:30px;
+            position: absolute;
+            top: 21px;
+            border-radius:30px 30px;
+
+          }
+
+          .css{
+            grid-area:css;
+            background:white;
+            font-size: 2em;
+            word-spacing: 100px;
+            border-radius: 30px 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+
+        }
+          
+     
+          
+          
+          .js{
+            grid-area: js;
+          }
+
+       
+          .preview{
+            grid-area:preview;
+            background-color: white;
+            border-radius: 30px 30px;
+            font-size: 2em; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+
+
+
+            
+
+          }
+
+          .block1{
+            grid-area:block1;
+            background-color: white;
+            border: 2px solid lightskyblue;
+              border-radius: 50px 50px;
+              margin-top: 50px;
+}
+            .block2{
+            grid-area:block2;
+            background-color: white;
+            border: 2px solid lightskyblue;
+              border-radius: 50px 50px;
+              margin-top: 50px;
+
+}
+
+            .block3{
+            grid-area:block3;
+            background-color: white;
+            border: 2px solid   ;
+              border-radius: 50px 50px;
+              margin-top: 50px;
+              border: 2px solid lightskyblue;
+
+
+}  
+.css2{
+            grid-area:css2;
+            background-color: white;
+            border-radius: 30px 30px;
+            font-size: 2em; 
+            color: burlywood;
+            margin-top: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+
+}
+          
+          .img1{
+            width:500px;
+            height:500px;
+            left:50px;
+            margin-top:10px;
+            border-radius: 30px 30px;
+          }
+
+          .img2{
+            width:500px;
+            height:500px;
+            ;
+            left:560px;
+            margin-bottom:80px;
+            margin-top: 10px;
+            border-radius: 30px 30px;
+          }
+
+          .img3{
+            width:500px;
+            height:500px; ;
+            left:560px;
+            margin-bottom:80px;
+            margin-top: 10px;
+            border-radius: 30px 30px;
+          }
+
+          
+          
+      .paket1{
+        grid-area:paket1;
+        background-color:lightskyblue ;
+        border-radius: 30px 30px;
+        text-align: left;
+        color:black;
+        font-size: 1.25em;
+        margin-top: 75px;
+        text-align: justify;
+        margin-top: 150px;
+        height: 100px;
+
+
+    
+
+      }
+
+      .paket2{
+        grid-area:paket2;
+        border-radius: 30px 30px;
+        text-align:right;
+        margin-bottom:100px;
+        margin-top: 75px;
+        text-align: justify;
+        font-size: 1.5em;
+        color:black;
+        margin-top: 150px;
+
+
+
+
+       
+      }
+
+      .paket3{
+        grid-area:paket3;
+        border-radius: 30px 30px;
+        text-align:left;
+        margin-bottom:100px;
+        margin-top:100px;
+        text-align: justify;
+        background-color: lightskyblue;
+        color:black;
+        margin-top:130px;        
+        font-size: 1.5em;
+        height: 100px;
+
+
+
+
+       
+      }
+      .paket4{
+        grid-area:paket4;
+        border-radius: 30px 30px;
+        text-align:left;
+        margin-bottom:100px;
+        text-align: justify;
+        background-color: lightskyblue;
+        color:black;
+        height: 100px;
+        font-size: 1.5em;
+        margin-top:60px;        
+
+        height: 100px;
+       
+
+
+
+       
+      }
+
+      .paket5{
+        grid-area:paket5;
+        border-radius: 30px 30px;
+        text-align:left;
+        text-align: justify;
+        background-color: lightskyblue;
+        color:black;
+        font-size: 1.5em;
+        height: 100px;
+        margin-top:120px;        
+
+       
+
+
+
+       
+      }
+
+      .paket6{
+        grid-area:paket6;
+        border-radius: 30px 30px;
+        text-align: justify;
+        
+        background-color: lightskyblue;
+        color:black;
+        height: 100px;
+        margin-top:65px;
+
+        
+
+
+
+
+
+       
+      }
+      .img5{
+        border-radius: 30px 30px;
+        height:450px;
+        width:500px;
+        margin-top: 70px;
+        padding-left: 90px;
+        position:absolute;
+      }
+      
+    
+
+      .ourteacher{
+        font-size: 3em; 
+    font-weight: bold;
+    color: white; 
+    letter-spacing: 2px;
+    text-align: center;
+
+
+
+
+
+
+      }
+
+      .Hr{
+        grid-area:Hr;
+        height: 10px; 
+        width: 100%;
+        margin-top:300px;
+
+
+      }
+
+      .img8{
+        height:300px;
+        width:300px;
+        margin-right:100px;
+        margin-top: 100px;
+        border-radius: 30px 30px;
+
+
+
+
+      }
+
+     
+      
+.paket8{
+        grid-area:paket8;
+        text-align: justify;
+        color:burlywood;
+        font-size: 4em;
+        position:relative;
+        justify-content: space-between;
+        margin-top:300px;
+        border-radius: 30px 30px;
+        
+
+      }
+       
+      
+
+      .profile1{
+        font-size: 1em;
+        padding-left: 450px;
+        margin-top: -400px;
+        white-space: nowrap;
+
+
+      }
+      .name1{
+        font-size: 0.7577777em;
+        padding-left: 0px;
+        margin-top: 320px;
+        font-weight: bold;
+        color:skyblue;
+      }
+
+      .position1{
+        font-size: 0.40em;
+        right: 400px;
+        font-weight: bold;
+        color:skyblue;
+        margin-top: -50px
+        
+      
+      }
+
+      .academicdegrees1{
+        font-size: 0.40em;
+        margin-top: -400px;
+        color:burlywood;
+        font-weight: bold;
+        padding-left: 450px;
+
+      
+ 
+        
+
+      }
+
+      .explain1{
+        font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -25px;
+        color:black;
+        margin-bottom: 20px;
+        padding-left: 450px;
+
+
+      }
+
+      .office1{
+        font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color:burlywood;
+        font-weight: bold;
+        padding-left: 450px;
+
+      }
+    
+    .email{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 10px;
+        color:burlywood;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 450px;
+
+
+    }
+
+    .explain1_1{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -2px;
+        color:black;
+        padding-left: 450px;
+
+    }
+
+    .explain1_2{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -10px;
+        color:black;
+        padding-left: 450px;
+
+    }
+    .phone{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 10px;
+        color:burlywood;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 450px;
+
+    }
+    
+    .explain1_3{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -10px;
+        color:black;
+        padding-left: 450px;
+
+    }
+
+
+    .paket9{
+        grid-area:paket9;
+        text-align: justify;
+        color:burlywood;
+        font-size: 4em;
+        position:relative;
+        justify-content: space-between;
+        margin-top: 350px;
+        border-radius: 30px 30px;
+
+      
+      }
+
+      .profile2{
+        font-size: 1em;
+        padding-left: 450px;
+        margin-top: -400px;
+        white-space: nowrap;
+
+
+      }
+      .name2{
+        font-size: 0.65em;
+        padding-left: -250px;
+        margin-top: 320px;
+        font-weight: bold;
+        color:skyblue;
+      }
+
+      .position2{
+        font-size: 0.40em;
+        left: 200px;
+        font-weight: bold;
+        color:skyblue;
+        margin-top: -50px;
+
+        
+      
+      }
+
+      .academicdegrees2{
+        font-size: 0.40em;
+        margin-top: -400px;
+        color:burlywood;
+        font-weight: bold;
+        padding-left: 450px;
+
+      
+ 
+        
+
+      }
+
+      .explain2{
+        font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -25px;
+        color:black;
+        margin-bottom: 20px;
+        padding-left: 450px;
+
+
+      }
+
+      .office2{
+        font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color:burlywood;
+        font-weight: bold;
+        padding-left: 450px;
+
+      }
+    
+    .email2{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 10px;
+        color:burlywood;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 450px;
+
+
+    }
+
+    .explain2_1{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -2px;
+        color:black;
+        padding-left: 450px;
+
+    }
+
+    .explain2_2{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -10px;
+        color:black;
+        padding-left: 450px;
+
+    }
+    .phone2{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 10px;
+        color:burlywood;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 450px;
+
+    }
+    
+    .explain2_3{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -10px;
+        color:black;
+        padding-left: 450px;
+
+    }
+
+    .img9{
+        height:300px;
+        width:300px;
+        margin-right:100px;
+        margin-top: 100px;
+        border-radius: 30px 30px;
+
+
+
+
+      }
+
+
+    .paket10{
+        grid-area:paket10;
+        margin-bottom:100px;
+        text-align: justify;
+        color:burlywood;
+        margin-top: 100px;
+        font-size: 4em;
+        position:relative;
+        justify-content: space-between;
+        margin-top:375px;
+        border-radius: 30px 30px;
+
+        
+      }
+
+      .profile3{
+        font-size: 1em;
+        padding-left: 450px;
+        margin-top: -400px;
+        white-space: nowrap;
+
+
+      }
+      .name3{
+        font-size: 0.65em;
+        padding-left: -250px;
+        margin-top: 320px;
+        font-weight: bold;
+        color:skyblue;
+      }
+
+      .position3{
+        font-size: 0.40em;
+        left: 200px;
+        font-weight: bold;
+        color:skyblue;
+        margin-top: -50px;
+
+        
+      
+      }
+
+      .academicdegrees3{
+        font-size: 0.40em;
+        margin-top: -400px;
+        color:burlywood;
+        font-weight: bold;
+        padding-left: 450px;
+
+      
+ 
+        
+
+      }
+
+      .explain3{
+        font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -25px;
+        color:black;
+        margin-bottom: 20px;
+        padding-left: 450px;
+
+
+      }
+
+      .office3{
+        font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color:burlywood;
+        font-weight: bold;
+        padding-left: 450px;
+
+      }
+    
+    .email3{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 10px;
+        color:burlywood;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 450px;
+
+
+    }
+
+    .explain3_1{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -2px;
+        color:black;
+        padding-left: 450px;
+
+    }
+
+    .explain3_2{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -10px;
+        color:black;
+        padding-left: 450px;
+
+    }
+    .phone3{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: 10px;
+        color:burlywood;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 450px;
+
+    }
+    
+    .explain3_3{
+      font-size: 0.40em;
+        padding-left: 400px;
+        margin-top: -10px;
+        color:black;
+        padding-left: 450px;
+
+    }
+
+    .img10{
+        height:300px;
+        width:300px;
+        margin-right:100px;
+        margin-top: 100px;
+        border-radius: 30px 30px;
+
+
+
+
+      }
+      .Hr1{
+        grid-area:Hr;
+        height: 100px; 
+        width: 100%;
+        margin-top:2000px;
+
+
+      }
+
+      .event{
+        grid-area:event;
+        margin-top: -600px;
+a
+        
+      }
+
+      .img11{
+        height: 300px;
+        width:100%;
+        height: 1000px;
+        border-radius: 30px 30px;
+        margin-top: 800px;
+        position: relative; 
+
+      }
+
+      .event2{
+        grid-area:event2;
+        margin-top: -400px ;
+        
+      }
+
+      .event3{
+        grid-area:event3;
+        margin-top:275px ;
+        
+      }
+
+      .img12{
+        height: 300px;
+        width:100%;
+        height: 1000px;
+        border-radius: 30px 30px;
+        margin-top: 1450px;
+        position: relative; 
+
+      }
+
+      .event1_1{
+        grid-area: event1_1;
+            color:burlywood;
+            font-size: 5em;
+            border-radius: 30px 30px;
+            font-weight: bold;
+            margin-top: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+
+
+      }
+
+    .paket7{
+      grid-area: paket7;
+      border: 5px solid lightskyblue; 
+
+    margin-top: 200px;
+    border-radius: 30px 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    }
+
+      .ourteacher {
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    font-size: 13em;
+    font-weight: bold;
+    position: absolute;
+    transform: rotate(-180deg);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+    height: auto;
+    letter-spacing: 5px;
+    color: burlywood;
+
+}
+
+.tambah{
+  grid-area:tambah;
+  margin-top: 200px;
+  font-size: 1.75em;
+  color:black;
+}
+
+.block1, .block2, .block3, .event, .event2, .event3 {
+    transition: transform 0.3s ease !important;
+}
+
+/* Ensure event images maintain proper scaling */
+.event img, .event2 img, .event3 img {
+    transition: transform 0.3s ease !important;
+}
+    
+</style>
+<body>
+    <div class="container">
+        <div class="html" id="video"> Introduction to IUBM 
+        <img class="img" src="image copy.png">
+    </div>
+        <div class="css" id="#css">
+          <a href ="#video" style="color:burlywood"  onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">Our_video</a>
+            <a href="#our-activities"style="color:burlywood" onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">Our_Activities</a>
+            <a href ="#overviewourprogram"style="color:burlywood" onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">Overview_our_program</a>
+            <a href="#ourteacher" style="color:burlywood" onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">Meet_Our_Teacher</a>
+            <a href="#event"style="color:burlywood" onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">Upcoming_events</a>
+
+
+        </div>
+        <div class="js">
+           <iframe width="100%" height="100%" border-radius="30px 30px"
+ 
+    src="https://www.youtube.com/embed/BQ3gqmPN63I?autoplay=1&mute=1" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen    ;
+    >
+</iframe>
+    </div>
+    <div class="preview" id="our-activities">
+        <hr style="color:lightskyblue">
+        <h1 style="color:burlywood" style="font-style: initial;" onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">-----Our Activities-----</h1>
+
+    </div>
+    <div class="block1">
+      <h1>Christmas dinner </h1>
+      <hr style="color:lightskyblue">
+    <img class="img1" src="IMG_0662.JPG">
+
+
+
+
+  </div>
+
+
+
+    <div class="block2">
+      <h1>Taiwan stock museum  </h1>
+      <hr style="color:lightskyblue">
+
+      <img class="img2" src="IMG_3510.jpg">
+
+
+    </div>
+
+    <div class="block3">
+      <h1>Orientation day </h1>
+      <hr style="color:lightskyblue">
+
+      <img class="img3" src="IMG_3511.jpg">
+
+
+    </div>
+    
+    <div class="css2" id="overviewourprogram">
+      <hr style="color:lightskyblue" >
+
+  
+     <h1  onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">---Overview Our Program---</h1>
+      </b>
+      </div>
+      
+ <div class="paket1" >
+  
+
+
+<h1 style="color:light">▼ABOUT THE PROGRAM</h1>
+<h3>  The International Undergraduate Program In Business And Management (IUBM) Is Part Of The Academic Offerings Of The College Of Business (COB), Chung Yuan Christian University (CYCU). The Program Is One Of The Three All-English International Programs In The COB, And Is The Younger Sibling Of The International Master Of Business Administration (IMBA Program) Program, And The Doctor Of Philosophy In Business (PhD In Business Program). The COB Was Accredited By The Association To Advance Collegiate Schools Of Business (AACSB) In 2015 And Is Among The Top 5% Out Of The 16,000 Business Schools In The World. The IUBM Program Is Supported By The COB’s 90 Full-Time Faculty Members, 98% Of Which Have Doctoral Degrees.
+</h3>
+</div>
+
+
+
+
+<div class="paket2">
+  <img class="img5" src="image.png">
+
+
+</div>
+
+<div class="paket3" >
+  <h1>▼ Features of IUBM Program</h1>
+<h3>Global Business Management Professionals with Interdisciplinary,
+  Multicultural and Ethical Perspectives.</h3>
+  
+</div>
+
+<div class="paket4" >
+  <h1>▼ Vision</h1>      
+<h3>The IUBM Program’s vision is to support the College of Business by providing undergraduate academic programs that produce international business and management graduates with emphasis on academic excellence, global competitiveness, and high ethical values.
+</h3>
+  
+</div>
+
+<div class="paket5" >
+  <h1>▼ Mission</h1>
+<h3>The IUBM Program’s mission is to educate international Business and Management students to become academically-excellent, globally-competitive, and ethically-responsible business leaders. Our duty is to produce undergraduates that will create socially-responsible businesses, and improve the management of existing organizations to help raise standards of living. 
+
+</h3>
+  
+</div>
+
+<div class="paket6">
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+  <h1 style="font-size:xxx-large;" >▼ Future Outlook</h1>
+  <h2 style="font-size:x-large;" >The United Nations launched the “2030 Sustainable Development Goals” (SDGs), which propose 17 core objectives for global governments and businesses to strive for sustainable development. The Educational Philosophy of the College of Business covers the sustainable development goals of the United Nations and integrates them into education and research. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, neque facilis doloribus, nulla incidunt reprehenderit obcaecati perferendis, dolorum quis vitae voluptate laboriosam quod ad id quam accusantium distinctio illo fuga?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro dolore maxime quod voluptatum tempora nesciunt vel deleniti odio ab culpa.</b>
+
+  </h2>
+
+
+</div>
+<div class="Hr">
+<hr style="color:skyblue">
+  
+</div>
+
+
+<div class="paket7">
+  <p class="ourteacher" onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'">our teacher</p>
+</div>
+ 
+
+
+<div class="paket8" id="ourteacher">
+    <img class="img8" src="image copy 6.png">
+    <h4 class="profile1">Program Director  </h4>
+      <p class="name1">Hao fang</p>
+      <p class="position1">(Chairman / Associate Professor)
+      </p>
+      <p class="academicdegrees1">Academic Degrees </p>
+      <p class="explain1">Ph.D. Finance National Taiwan University of Science and Technology, Taiwan</p>
+      <p class="office1">Office</p>
+      <p class=explain1_1>Management Building, Room 418</p>
+      <p class="email">Email</p>
+      <p class=explain1_2>hihaoa@gmail.com</p>
+      <p class="phone">Phone</p>
+      <p class=explain1_3>+886-3-265-5030</p>
+
+
+    
+  
+  
+      </div>
+
+      <div class="paket9">
+        <img class="img9" src="image copy 8.png">
+        <h4 class="profile2">Faculty  </h4>
+          <p class="name2">Nguyen Quynh Trans </p>
+          <p class="position2">(Assitance teacher)</p>
+          <p class="academicdegrees2">Academic Degrees </p>
+          <p class="explain2">Ph.D. Program in Business, CYCU, Taiwan</p>
+          <p class="office2">Office</p>
+          <p class=explain2_1>Management Building, Room 103B</p>
+          <p class="email2">Email</p>
+          <p class=explain2_2>ngquynhtrang91@gmail.com/p>
+          <p class="phone2">Phone</p>
+          <p class=explain2_3>(+886)-3-2655043</p>
+    
+    
+        
+      
+      
+          </div>
+    
+
+          <div class="paket10">
+            <img class="img10" src="image copy 9.png">
+            <h4 class="profile3">Faculty  </h4>
+              <p class="name3">Min-Sun Kim              </p>
+              <p class="position3">(Assitance Professor)</p>
+              <p class="academicdegrees3">Academic Degrees </p>
+              <p class="explain3"> Ph.D. Program in Business, CYCU, Taiwan</p>
+              <p class="office3">Office</p>
+              <p class=explain3_1>Management Building, Room 404</p>
+              <p class="email3">Email</p>
+              <p class=explain3_2>minsunkim@cycu.edu.tw</p>
+              <p class="phone3">Phone</p>
+              <p class=explain3_3>(+886)-3-2655044
+              </p>
+        
+        
+            
+          
+          
+              </div>
+          
+              
+
+  <div class="Hr1">
+    <hr style="color:skyblue">
+      
+    </div>
+
+    <div class="event1_1"id="event">
+      <p onmouseover="this.style.color='lightskyblue'" onmouseout="this.style.color='burlywood'"> ---Upcoming events--- </p>
+    </div>
+    <div class="event" >
+      <img class="img11" src="image copy 10.png">
+      <mark > ---Sports day 17-18 march 2025---</mark>
+    </div>
+
+
+    <div class="event2" >
+      <img class="img12" src="image copy 12.png">
+      <mark > ---
+        Announcement of Course Selection Guideline & Schedule for the Spring semester of 2025---</mark>
+      
+    </div>
+
+    <div class="event3" >
+      <img class="img12" src="image copy 13.png">
+      <mark > ---
+        2025 CYCU EECS International Summer Camp Kicks Off. - Chung Yuan Christian University---</mark>
+      
+    </div>
+
+    <div class="tambah">
+      <b>The IUBM Program is supported by the COB’s 90 full-time faculty members, 98% of which have doctoral degrees. The five departments (i.e., Business Administration, Finance, Accounting, International Business, and Information Management) of the COB supports the IUBM program to provide interdisciplinary courses. The IUBM program is proud of its pool of faculty who breathes life and provides exciting learning opportunities into the IUBM courses. </b>
+    </div>
+
+    <script>
+      // 1. Soft hover effect for activity cards AND event images
+      document.querySelectorAll('.block1, .block2, .block3, .event, .event2, .event3').forEach(card => {
+          card.addEventListener('mouseenter', () => {
+              card.style.transform = 'scale(1.02)';
+              card.style.transition = 'transform 0.3s ease';
+          });
+          card.addEventListener('mouseleave', () => {
+              card.style.transform = 'scale(1)';
+          });
+      });
+    
+      // 2. Simple fade-in for program highlights
+      document.querySelectorAll('.paket1, .paket3, .paket4, .paket5').forEach(item => {
+          item.style.opacity = '0';
+          item.style.transition = 'opacity 1s ease';
+          
+          setTimeout(() => {
+              item.style.opacity = '1';
+          }, 200);
+      });
+    </script>
+      </script>
+  </div>
+
+
+
+</body>
+</html>
